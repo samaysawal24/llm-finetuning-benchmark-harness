@@ -1,0 +1,30 @@
+model_name: "meta-llama/Meta-Llama-3-8B-Instruct"
+quantization: "4bit"  # "4bit", "8bit", "none"
+lora:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+training:
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.03
+  max_seq_length: 2048
+  epochs: 3
+  weight_decay: 0.01
+evaluation:
+  benchmarks:
+    - "gsm8k"
+    - "mmlu"
+    - "human_eval"
+  eval_steps: 100
+  checkpoint_dir: "./checkpoints/llama3_lora"

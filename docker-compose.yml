@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  finetuning-runner:
+    build: .
+    container_name: llm-finetuning-benchmark
+    volumes:
+      - ./configs:/app/configs
+      - ./checkpoints:/app/checkpoints
+    command: ["train", "--config", "configs/lora_llama3_8b.yaml"]
