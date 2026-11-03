@@ -1,6 +1,6 @@
 """
 LLM Fine-Tuning & Evaluation Harness Package
-Author: smay <cricketworldsamay@gmail.com>
+Author: Samay Sawal <cricketworldsamay@gmail.com>
 """
 
 from .trainer import FineTuningEngine
@@ -26,3 +26,4 @@ __all__ = [
     "ParameterCalculator",
     "BenchmarkEvaluator"
 ]
+

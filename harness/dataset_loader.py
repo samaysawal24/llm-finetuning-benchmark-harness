@@ -1,6 +1,6 @@
 """
 Instruction Dataset Loader and ChatML Formatter
-Author: smay <cricketworldsamay@gmail.com>
+Author: Samay Sawal <cricketworldsamay@gmail.com>
 """
 
 import json
@@ -52,3 +52,4 @@ class DatasetLoader:
                 )
             )
         return samples
+

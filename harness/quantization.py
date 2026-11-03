@@ -1,6 +1,6 @@
 """
 Quantization & Parameter Calculation Utilities
-Author: smay <cricketworldsamay@gmail.com>
+Author: Samay Sawal <cricketworldsamay@gmail.com>
 """
 
 from typing import Dict, Any
@@ -44,3 +44,4 @@ class ParameterCalculator:
         activation_gb = (batch_size * 0.8)
         total_vram = weights_gb + activation_gb + 1.2  # 1.2GB CUDA runtime overhead
         return round(total_vram, 2)
+

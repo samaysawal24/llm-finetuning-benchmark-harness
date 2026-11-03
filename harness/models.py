@@ -1,6 +1,6 @@
 """
 Data models and configurations for LLM Fine-Tuning & Evaluation Harness
-Author: smay <cricketworldsamay@gmail.com>
+Author: Samay Sawal <cricketworldsamay@gmail.com>
 """
 
 from typing import List, Dict, Any, Optional
@@ -52,3 +52,4 @@ class FineTuningJobSummary(BaseModel):
     final_eval_loss: float
     benchmark_results: List[EvaluationMetrics] = Field(default_factory=list)
     completed_at: datetime = Field(default_factory=datetime.utcnow)
+

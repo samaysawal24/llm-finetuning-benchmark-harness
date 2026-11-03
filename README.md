@@ -4,7 +4,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-brightgreen.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-PEFT_LoRA-EE4C2C.svg?logo=pytorch)](https://pytorch.org)
 [![Benchmarks](https://img.shields.io/badge/Benchmarks-MMLU_%7C_GSM8K_%7C_HumanEval-green.svg)](https://huggingface.co)
-[![Author](https://img.shields.io/badge/Author-smay-orange.svg)](https://github.com/samaysawal24)
+[![Author](https://img.shields.io/badge/Author-Samay_Sawal-orange.svg)](https://github.com/samaysawal24)
 
 A modular, production-ready fine-tuning and evaluation harness for parameter-efficient adaptation (LoRA / QLoRA 4-bit) of open-weights models (Meta-Llama 3, Mistral, Qwen). Features automated ChatML dataset formatting, gradient accumulation, learning rate scheduling, and multi-task benchmark scoring.
 
@@ -127,3 +127,4 @@ pytest tests/ -v
 - **Author:** smay ([@samaysawal24](https://github.com/samaysawal24))
 - **Email:** cricketworldsamay@gmail.com
 - **License:** Released under the [MIT License](LICENSE).
+

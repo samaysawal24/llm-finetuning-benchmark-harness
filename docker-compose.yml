@@ -8,3 +8,4 @@ services:
       - ./configs:/app/configs
       - ./checkpoints:/app/checkpoints
     command: ["train", "--config", "configs/lora_llama3_8b.yaml"]
+

@@ -1,6 +1,6 @@
 """
 LoRA / QLoRA Training Engine
-Author: smay <cricketworldsamay@gmail.com>
+Author: Samay Sawal <cricketworldsamay@gmail.com>
 """
 
 import math
@@ -74,3 +74,4 @@ class FineTuningEngine:
             final_eval_loss=0.89,
             benchmark_results=bench_results
         )
+

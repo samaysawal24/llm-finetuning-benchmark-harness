@@ -1,6 +1,6 @@
 """
 Multi-Benchmark Evaluator (MMLU / GSM8k / HumanEval)
-Author: smay <cricketworldsamay@gmail.com>
+Author: Samay Sawal <cricketworldsamay@gmail.com>
 """
 
 import math
@@ -48,3 +48,4 @@ class BenchmarkEvaluator:
 
     def run_all(self, benchmark_names: List[str]) -> List[EvaluationMetrics]:
         return [self.evaluate_suite(name) for name in benchmark_names]
+

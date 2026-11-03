@@ -1,6 +1,6 @@
 """
 Unit tests for LLM Fine-Tuning & Evaluation Harness
-Author: smay <cricketworldsamay@gmail.com>
+Author: Samay Sawal <cricketworldsamay@gmail.com>
 """
 
 import pytest
@@ -53,3 +53,4 @@ def test_training_and_evaluation_cycle():
     assert summary.job_id.startswith("ft_")
     assert summary.final_train_loss > 0.0
     assert len(summary.benchmark_results) == 2
+
